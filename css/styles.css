@@ -58,7 +58,7 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
+  --bs-body-font-weight: 10;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
@@ -76,11 +76,63 @@
   }
 }
 
+/* MONIQUE */
+.processheader {
+  font-family: 'Playfair Display' !important;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#allAssignments {
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  top: 5px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#allAssignments a:link {
+  text-decoration: none;
+}
+
+.assignmentNav {
+  background-color:rgb(77, 125, 72);
+  color: white;
+  text-transform: lowercase;
+  font-family:sans-serif;
+  font-weight: 100;
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  font-size: 1.25rem;
+  display:inline-block;
+}
+
+.assignmentNav a {
+  text-decoration: none;
+}
+.assignmentNav:hover {
+  background-color: white;
+  color:black;
+}
+
+#video {
+  margin-top:40px;
+  width: 100vw;
+  float: center;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+  /*font-weight: var(--bs-body-font-weight);*/
+  font-weight: 0;
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
@@ -236,11 +288,11 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: #fff;
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: #000 !important;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3793,6 +3845,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-header {
+  
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -3938,12 +3991,14 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: #A8C898 !important;
+  
 }
 
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #1abc9c;
+  color: #f1b98b;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4036,6 +4091,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: #A8C898 !important;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4044,12 +4100,16 @@ textarea.form-control-lg {
 .navbar > .container-lg,
 .navbar > .container-xl,
 .navbar > .container-xxl {
+  background-color: #A8C898 !important;
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
 }
+
+/* MONIQUE */
 .navbar-brand {
+  font-family: 'Playfair Display' !important;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -4058,6 +4118,7 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 .navbar-nav {
+  font-family: 'Playfair Display';
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -4148,6 +4209,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-sm .offcanvas-header {
     display: none;
+    
   }
   .navbar-expand-sm .offcanvas {
     position: inherit;
@@ -11298,6 +11360,8 @@ html {
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: lighter !important;
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
@@ -11353,13 +11417,23 @@ html {
   align-items: center;
 }
 
+.ourjourney {
+  color: #A8C898 !important;
+  font-family: 'lato' sans-serif !important;
+  font-weight: lighter !important;
+  font-size: 1.5rem;
+}
+
+/* MONIQUE */
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  background-color: #A8C898 !important;
 }
 #mainNav .navbar-brand {
+  background-color: #A8C898 !important;
   color: #fff;
 }
 #mainNav .navbar-nav {
@@ -11397,11 +11471,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+   /*background: #1abc9c;*/
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    /*background: #1abc9c;*/
   }
 
   #mainNav.navbar-shrink {
@@ -11430,16 +11504,26 @@ html {
   color: #6c757d;
 }
 
+/* ADDED EDITS TO MASTHEAD */
 .masthead {
+  margin-top: -7%;
+  background-color: #A8C898 !important;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-family: 'Playfair Display';
+ /* text-shadow: 0px 0px 3px #FFF !important; */
+  text-transform: lowercase !important;
+  font-weight: lighter !important;
+  font-size: 6.75rem !important;
+  line-height: 6.75rem !important;
+  padding-bottom: 10px;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
 }
 .masthead .masthead-avatar {
   width: 15rem;
